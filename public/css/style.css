@@ -1,0 +1,70 @@
+body {
+    color: #333333;
+    font-family: 'Alata', sans-serif;
+    max-width: 650px;
+    text-align: center;
+    margin: 50px auto;
+    padding: 0 16px;
+}
+
+footer {
+    color: #888888;
+    border-top: 1px solid #eeeeee;
+    margin-top: 50px;
+    padding: 16px 0;
+}
+
+.container {
+    margin-top: 35px
+}
+
+h1 {
+    font-weight: bolder;
+}
+
+.content {
+    text-align: center;
+    margin-top: 70px;
+}
+
+.social {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social i {
+    padding-right: 30px;
+    font-size: 25px;
+    color: black;
+}
+
+.social i:hover {
+    color: grey;
+}
+
+button {
+    margin: 20px;
+}
+
+h5 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.me {
+    height: 600px;
+}
+
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.description {
+    max-width: 800px;
+    padding-left: 30px;
+    font-weight: bold;
+}
