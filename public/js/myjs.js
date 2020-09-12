@@ -11,21 +11,18 @@ weatherForm.addEventListener("submit", (e) => {
   messageOne.textContent = "Loading....";
   messagtwo.textContent = "";
   icon.innerHTML = "";
-  fetch("http://localhost:3000/weather?address=" + location).then(
-    (response) => {
-      response.json().then((data) => {
-        if (data.error) {
-          messageOne.textContent = data.error;
-        } else {
-          messageOne.textContent = data.city;
-          messagtwo.textContent = data.forecast;
-          var img2 = document.createElement("img"); // Use DOM HTMLImageElement
-          img2.src =
-            "http://openweathermap.org/img/wn/" + data.icon + "@2x.png";
-          img2.alt = "alt text";
-          document.querySelector("#icon").appendChild(img2);
-        }
-      });
-    }
-  );
+  fetch("/weather?address=" + location).then((response) => {
+    response.json().then((data) => {
+      if (data.error) {
+        messageOne.textContent = data.error;
+      } else {
+        messageOne.textContent = data.city;
+        messagtwo.textContent = data.forecast;
+        var img2 = document.createElement("img"); // Use DOM HTMLImageElement
+        img2.src = "http://openweathermap.org/img/wn/" + data.icon + "@2x.png";
+        img2.alt = "alt text";
+        document.querySelector("#icon").appendChild(img2);
+      }
+    });
+  });
 });
