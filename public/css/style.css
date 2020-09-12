@@ -1,6 +1,6 @@
 body {
     color: #333333;
-    font-family: 'Alata', sans-serif;
+    font-family: "Alata", sans-serif;
     max-width: 650px;
     text-align: center;
     margin: 50px auto;
@@ -15,7 +15,7 @@ footer {
 }
 
 .container {
-    margin-top: 35px
+    margin-top: 35px;
 }
 
 h1 {
@@ -55,16 +55,15 @@ h5 {
 
 .me {
     height: 600px;
+    padding: 20px;
 }
 
 .about {
     display: flex;
     flex-wrap: wrap;
-    padding: 20px;
 }
 
 .description {
     max-width: 800px;
-    padding-left: 30px;
     font-weight: bold;
 }
